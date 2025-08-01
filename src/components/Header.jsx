@@ -15,7 +15,7 @@ const Header = () => {
   
       <div className="header-flex" >
         <div className="logo">
-          <img src="src/assets/grandeit-logo.png" alt="" id="logo"/>
+          <img src="dist/assets/grandeit-logo.png" alt="" id="logo"/>
         </div>
 
         <div className="header-a-tags" >
@@ -53,11 +53,11 @@ const Header = () => {
             <Myhamburger  />
           </div>
           <div className="logo-mobile">
-            <img src="src/assets/grandeit-logo.png" alt="" id="logoMobile"/>
+            <img src="dist/assets/grandeit-logo.png" alt="" id="logoMobile"/>
             
           </div>
           <div className="cart-cartnumber">
-            <img src="src/assets/mobile-cart.svg" alt="" id="mobileCart" /><strong><small>0</small></strong>
+            <img src="dist/assets/mobile-cart.svg" alt="" id="mobileCart" /><strong><small>0</small></strong>
           </div>
           <div className="mobile-login"><Link to="/login">Login</Link></div>
         </div>

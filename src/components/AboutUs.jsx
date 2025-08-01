@@ -11,7 +11,7 @@ const AboutUs = () => {
                 <div className="left-grid">
                   <div className="left-grid-contents">
                     <div className="lexy-photo-info">
-                      <div><img src="src\assets\lexyPhoto.png" alt="" id="lexyPhoto" /></div>
+                      <div><img src="dist\assets\lexyPhoto.png" alt="" id="lexyPhoto" /></div>
                       <span className="lexy-name">LexyTunes Productions</span><i className="fa-solid fa-circle-check fa-l" style={{color:"blue", overflow:"hidden"}}></i>
                       <small>Studio</small>
                       <button id="followBtn">Follow</button>

@@ -11,7 +11,7 @@ const GrandeitStore = () => {
           <div className="songs-soundpacks-freedownloads">
             <a href="#"><div>
               <img
-                src="src\assets\equalizer-g162ea42f1_1280.png"
+                src="dist\assets\equalizer.png"
                 alt=""
                 id="audioFiles"
               />
@@ -20,7 +20,7 @@ const GrandeitStore = () => {
             </div></a>
             <a href="#"><div>
               <img
-                src="src\assets\music-gd92fb23ca_1920.jpg"
+                src="dist\assets\music-gd92fb23ca_1920.jpg"
                 alt=""
                 id="soundPacks"
               />
@@ -29,7 +29,7 @@ const GrandeitStore = () => {
             </div></a>
             <a href="#"><div>
               <img
-                src="src\assets\download-g19d3a9f43_1280.png"
+                src="dist\assets\download-g19d3a9f43_1280.png"
                 alt=""
                 id="freeDownloads"
               />
