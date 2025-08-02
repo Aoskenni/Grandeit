@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Myhamburger from "./Hamburger";
+import grandeitLogo from '../assets/grandeit-logo.png';
+import mobileCart from '../assets/mobile-cart.svg';
 
 const Header = () => {
 
@@ -15,7 +17,7 @@ const Header = () => {
   
       <div className="header-flex" >
         <div className="logo">
-          <img src="dist/assets/grandeit-logo.png" alt="" id="logo"/>
+          <img src={grandeitLogo} alt="" id="logo"/>
         </div>
 
         <div className="header-a-tags" >
@@ -53,11 +55,11 @@ const Header = () => {
             <Myhamburger  />
           </div>
           <div className="logo-mobile">
-            <img src="dist/assets/grandeit-logo.png" alt="" id="logoMobile"/>
+            <img src={grandeitLogo} alt="" id="logoMobile"/>
             
           </div>
           <div className="cart-cartnumber">
-            <img src="dist/assets/mobile-cart.svg" alt="" id="mobileCart" /><strong><small>0</small></strong>
+            <img src={mobileCart} alt="" id="mobileCart" /><strong><small>0</small></strong>
           </div>
           <div className="mobile-login"><Link to="/login">Login</Link></div>
         </div>

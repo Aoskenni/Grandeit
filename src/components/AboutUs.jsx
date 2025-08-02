@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
+import lexyPhoto from '../assets/lexyPhoto.png'
 
 const AboutUs = () => {
   return (
@@ -11,7 +12,7 @@ const AboutUs = () => {
                 <div className="left-grid">
                   <div className="left-grid-contents">
                     <div className="lexy-photo-info">
-                      <div><img src="dist\assets\lexyPhoto.png" alt="" id="lexyPhoto" /></div>
+                      <div><img src={lexyPhoto} alt="" id="lexyPhoto" /></div>
                       <span className="lexy-name">LexyTunes Productions</span><i className="fa-solid fa-circle-check fa-l" style={{color:"blue", overflow:"hidden"}}></i>
                       <small>Studio</small>
                       <button id="followBtn">Follow</button>

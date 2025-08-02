@@ -1,47 +1,70 @@
 import React from 'react';
+import AmaImg from '../assets/Ama.png';
+import FridayImg from '../assets/Friday.png';
+import CallMeImg from '../assets/Call-me.png';
+import OnyeImg from '../assets/Onye.png';
+import LonelyImg from '../assets/lonely.png';
+import ManyThingsImg from '../assets/many-things.png';
+import RunawayImg from '../assets/runaway.png';
+import TensionImg from '../assets/Tension.png';
+import EffortsImg from '../assets/efforts-img.png';
+import CincinnatiImg from '../assets/cincinnanti.png';
+import downloadIcon from '../assets/download-icon.svg';
+import cartIcon from '../assets/cart-icon.svg';
+import AmaAudio from '../assets/Ama-Tagged.mp3';
+import FridayAudio from '../assets/Friday-Tagged.mp3';
+import CallMeAudio from '../assets/Call-Me-Tagged.mp3';
+import OnyeAudio from '../assets/Onye-Tagged.mp3';
+import LonelyAudio from '../assets/Lonely-Tagged.mp3';
+import ManyThingsAudio from '../assets/Many-Things-Tagged.mp3';
+import RunawayAudio from '../assets/Runaway-Tagged.mp3';
+import TensionAudio from '../assets/Tension-Tagged.mp3';
+import EffortsAudio from '../assets/Efforts-Tagged.mp3';
+import CincinnatiAudio from '../assets/Cincinnati-Tagged.mp3';
+
 const TrackList = () => {
   const allBeatsLists = [
     {
       id: 0,
       title: "Ama",
-      photo: "dist/assets/Ama.png",
+      photo: AmaImg,
       bpm: 100,
       tags: "Afrobeats",
       duration: "2:49",
-      src: "dist/assets/Ama-Tagged.mp3",
+      src: AmaAudio,
       download: " ",
       Buy: " ",
     },
     {
       id: 0,
       title: "Friday",
-      photo: "dist/assets/Friday.png",
+      photo: FridayImg,
       bpm: 200,
       tags: "Afrobeats",
       duration: "2:21",
-      src: "dist/assets/Friday-Tagged.mp3",
+      src: FridayAudio,
       download: " ",
       buy: " ",
     },
     {
       id: 0,
       title: "Call Me",
-      photo: "dist/assets/Call-me.png",
+      photo: CallMeImg,
       bpm: 300,
       tags: "Afrobeats",
       duration: "2:43",
-      src: "dist/assets/Call-Me-Tagged.mp3",
+      src: CallMeAudio,
       download: " ",
       buy: " ",
     },
     {
       id: 0,
       title: "Onye",
-      photo: "dist/assets/Onye.png",
+      photo: OnyeImg,
       bpm: 400,
       tags: "Afrobeats",
       duration: "2:48",
-      src: "dist/assets/Onye-Tagged.mp3",
+      src: OnyeAudio,
       download: " ",
       buy: " ",
     },
@@ -49,66 +72,66 @@ const TrackList = () => {
     {
       id: 0,
       title: "Lonley",
-      photo: "dist/assets/lonely.png",
+      photo: LonelyImg,
       bpm: 100,
       tags: "Afrobeats",
       duration: "2:24",
-      src: "dist/assets/Lonely-Tagged.mp3",
+      src: LonelyAudio,
       download: " ",
       Buy: " ",
     },
     {
       id: 0,
       title: "Many Things",
-      photo: "dist/assets/many-things.png",
+      photo: ManyThingsImg,
       bpm: 200,
       tags: "Afrobeats",
       duration: "2:46",
-      src: "dist/assets/Many-Things-Tagged.mp3",
+      src: ManyThingsAudio,
       download: " ",
       buy: " ",
     },
     {
       id: 0,
       title: "Runaway",
-      photo: "dist/assets/runaway.png",
+      photo: RunawayImg,
       bpm: 300,
       tags: "Afrobeats",
       duration: "2:36",
-      src: "dist/assets/Runaway-Tagged.mp3",
+      src: RunawayAudio,
       download: " ",
       buy: " ",
     },
     {
       id: 0,
       title: "Tension",
-      photo: "dist/assets/Tension.png",
+      photo: TensionImg,
       bpm: 400,
       tags: "Afrobeats",
       duration: "2:44",
-      src: "dist/assets/Tension-Tagged.mp3",
+      src: TensionAudio,
       download: " ",
       buy: " ",
     },
     {
       id: 0,
       title: "Efforts",
-      photo: "dist/assets/efforts-img.png",
+      photo: EffortsImg,
       bpm: 400,
       tags: "Afrobeats",
       duration: "2:42",
-      src: "dist/assets/Efforts-Tagged.mp3",
+      src: EffortsAudio,
       download: " ",
       buy: " ",
     },
     {
       id: 0,
       title: "Cincinnati",
-      photo: "dist/assets/cincinnanti.png",
+      photo: CincinnatiImg,
       bpm: 400,
       tags: "Afrobeats",
       duration: "2:58",
-      src: "dist/assets/Cincinnati-Tagged.mp3",
+      src: CincinnatiAudio,
       download: " ",
       buy: " ",
     },
@@ -183,6 +206,10 @@ const TrackList = () => {
     setIsPlaying(true);
   }
   
+  const handleDownload = (src) => {
+    // Placeholder for download functionality
+    console.log("Downloading:", src);
+  };
   
   return (
     <>
@@ -236,8 +263,8 @@ const TrackList = () => {
                   </div>
           
                   <div className="download-cart">
-                    <button onClick={() => handleDownload(beat.src)}> <span className="btnDownload-text">Download</span><span><img src="dist/assets/download-icon.svg" alt="Download" /></span></button>
-                    <button onClick={() => handleDownload(beat.src)}><img src="dist/assets/cart-icon.svg" alt="Buy"/></button>
+                    <button onClick={() => handleDownload(beat.src)}> <span className="btnDownload-text">Download</span><span><img src={downloadIcon} alt="Download" /></span></button>
+                    <button onClick={() => handleDownload(beat.src)}><img src={cartIcon} alt="Buy"/></button>
                   </div>
                 </div>
                 
